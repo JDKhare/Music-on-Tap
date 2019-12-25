@@ -1,0 +1,86 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Boogaloo', cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: black;
+}
+
+.app {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+header h1{
+    margin: 40px 0px 20px 0px;
+    text-align: center;         
+    color: blanchedalmond;
+}
+
+header p{
+    color: blanchedalmond;
+}
+
+.pads{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 120px;
+    width: 100px;
+    border-radius: 50px;
+    flex: 1;
+   
+}
+
+.pad1{
+    background: rgb(255, 223, 40);
+}
+.pad2{
+    background: rgb(93, 243, 34);
+}
+.pad3{
+    background: rgb(243, 100, 34);
+}
+.pad4{
+    background: rgb(34, 125, 243);
+}
+.pad5{
+    background: rgb(142, 34, 243);
+}
+.pad6{
+    background: rgb(243, 34, 173);
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
